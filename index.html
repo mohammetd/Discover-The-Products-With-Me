@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover The Products With Me - Top Tech, Gaming & Home Products 2024</title>
+    <meta name="description" content="Discover the best tech products, gaming gear, and home devices. Expert reviews for USB-C hubs, smart mouse, professional microphones, RAM upgrades, projectors, ANC earbuds, and more.">
+    <meta name="keywords" content="USB-C hub, docking station, smart mouse, wireless mouse, professional microphone, streaming mic, RAM upgrade, gaming laptop, SSD, AMD Ryzen, projector, ANC earbuds, gaming performance, FPS boost, streamer gear">
+    <meta name="author" content="Discover The Products With Me">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --accent2: #10b981;
+            --accent3: #ef4444;
+            --accent4: #8b5cf6;
+            --accent5: #06b6d4;
+            --accent6: #8b5cf6;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f1f5f9;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="40" fill="white" fill-opacity="0.05"/></svg>');
+            background-size: 200px;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .intro p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray);
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 0.9rem 1rem 0.9rem 45px;
+            border: 2px solid #e5e7eb;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.2rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.8rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .product-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+
+        .product-category {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-features {
+            margin: 1rem 0;
+            padding-left: 1.2rem;
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .product-features li {
+            margin-bottom: 0.4rem;
+        }
+
+        .product-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            margin-top: 1rem;
+        }
+
+        .product-link:hover {
+            background: linear-gradient(to right, var(--primary-dark), var(--secondary));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .product-link i {
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .product-link:hover i {
+            transform: translateX(3px);
+        }
+
+        .amazon-badge {
+            display: inline-block;
+            background: #ff9900;
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+
+        .aliexpress-badge {
+            display: inline-block;
+            background: #ff4747;
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+
+        .hot-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff0000, #ff9900);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+
+        .budget-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent2), #059669);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+
+        .performance-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent3), #dc2626);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+            animation: pulse 1.5s infinite;
+        }
+
+        .pro-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent4), #7c3aed);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+            animation: shine 3s infinite;
+        }
+
+        .smart-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent5), #0891b2);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+            animation: smartPulse 2s infinite;
+        }
+
+        .essential-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent6), #6d28d9);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 600;
+            animation: essentialGlow 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes shine {
+            0% { background-position: -100px; }
+            100% { background-position: 200px; }
+        }
+
+        @keyframes smartPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes essentialGlow {
+            0%, 100% { box-shadow: 0 0 5px var(--accent6); }
+            50% { box-shadow: 0 0 15px var(--accent6); }
+        }
+
+        /* Special Card Styles */
+        .featured-product {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #f59e0b;
+        }
+
+        .featured-product::before {
+            background: linear-gradient(to right, #f59e0b, #f97316);
+        }
+
+        .budget-product {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 2px solid var(--accent2);
+        }
+
+        .budget-product::before {
+            background: linear-gradient(to right, var(--accent2), #059669);
+        }
+
+        .performance-product {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 2px solid var(--accent3);
+        }
+
+        .performance-product::before {
+            background: linear-gradient(to right, var(--accent3), #dc2626);
+        }
+
+        .pro-product {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border: 2px solid var(--accent4);
+        }
+
+        .pro-product::before {
+            background: linear-gradient(to right, var(--accent4), #7c3aed);
+        }
+
+        .smart-product {
+            background: linear-gradient(135deg, #cffafe 0%, #a5f3fc 100%);
+            border: 2px solid var(--accent5);
+        }
+
+        .smart-product::before {
+            background: linear-gradient(to right, var(--accent5), #0891b2);
+        }
+
+        .essential-product {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+            border: 2px solid var(--accent6);
+        }
+
+        .essential-product::before {
+            background: linear-gradient(to right, var(--accent6), #6d28d9);
+        }
+
+        /* Featured Products Banner */
+        .featured-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .featured-banner i {
+            font-size: 1.5rem;
+        }
+
+        .featured-banner span {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Special Offer Banner */
+        .offer-banner {
+            background: linear-gradient(135deg, var(--accent5) 0%, var(--accent2) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: offerPulse 3s infinite;
+        }
+
+        .essential-banner {
+            background: linear-gradient(135deg, var(--accent6) 0%, #6d28d9 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: essentialBannerPulse 3s infinite;
+        }
+
+        @keyframes offerPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes essentialBannerPulse {
+            0%, 100% { box-shadow: 0 0 10px rgba(139, 92, 246, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.8); }
+        }
+
+        /* New Products Section */
+        .new-arrivals {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        /* Essential Products Section */
+        .essentials-section {
+            margin-bottom: 3rem;
+        }
+
+        /* No Results */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
+        }
+
+        .no-results i {
+            font-size: 3rem;
+            color: #d1d5db;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-container {
+                max-width: 100%;
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+            
+            .stats-bar {
+                gap: 1rem;
+            }
+            
+            .stat {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .featured-product, .budget-product, .performance-product, .pro-product, .smart-product, .essential-product {
+                grid-column: 1;
+            }
+            
+            .featured-banner, .offer-banner, .essential-banner {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-card {
+            animation: fadeIn 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Discover The Products With Me</h1>
+                <p class="tagline">Your ultimate guide to finding the best tech, gaming, and home products with expert recommendations</p>
+                <div class="stats-bar">
+                    <div class="stat"><i class="fas fa-laptop"></i> 18+ Premium Products</div>
+                    <div class="stat"><i class="fas fa-star"></i> Expert Verified</div>
+                    <div class="stat"><i class="fas fa-plug"></i> Essential Tech</div>
+                    <div class="stat"><i class="fas fa-bolt"></i> Best Value Deals</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="intro">
+            <h2>Premium Product Collection 2024</h2>
+            <p>Discover carefully selected top-performing products in technology, gaming, streaming, entertainment and home improvement. Each product is handpicked for quality, performance, and value.</p>
+        </div>
+
+        <!-- Essential Banner -->
+        <div class="essential-banner">
+            <i class="fas fa-plug"></i>
+            <span>⚡ ESSENTIAL TECH: $27 USB-C Hub That REPLACES All Dongles!</span>
+            <i class="fas fa-bolt"></i>
+        </div>
+
+        <!-- Offer Banner -->
+        <div class="offer-banner">
+            <i class="fas fa-gem"></i>
+            <span>💎 LIMITED OFFER: Smart Mouse That Solves Everything - Only $8.56!</span>
+            <i class="fas fa-gem"></i>
+        </div>
+
+        <!-- Featured Banner -->
+        <div class="featured-banner">
+            <i class="fas fa-fire"></i>
+            <span>🔥 HOT NEW: $27 USB-C Hub, $76 Pro Mic & $8.56 Smart Mouse!</span>
+            <i class="fas fa-fire"></i>
+        </div>
+
+        <!-- Essentials Section -->
+        <div class="essentials-section">
+            <div class="section-title">
+                <i class="fas fa-tools"></i>
+                <h3>Essential Tech Solutions</h3>
+            </div>
+            <div class="featured-banner" style="background: linear-gradient(135deg, var(--accent6) 0%, #6d28d9 100%); margin-bottom: 0;">
+                <i class="fas fa-usb"></i>
+                <span>🔌 Game Changer: USB-C Hub That Ends Dongle Dependency for Only $27!</span>
+                <i class="fas fa-usb"></i>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search products by name, category, or features...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="tech">Technology</button>
+                <button class="filter-btn" data-filter="audio">Audio</button>
+                <button class="filter-btn" data-filter="streaming">Streaming</button>
+                <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+                <button class="filter-btn" data-filter="performance">Performance</button>
+                <button class="filter-btn" data-filter="smart">Smart Tech</button>
+                <button class="filter-btn" data-filter="essential">Essentials</button>
+                <button class="filter-btn" data-filter="home">Home & Lifestyle</button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded dynamically -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Discover The Products With Me</div>
+                <p>Your trusted source for product discovery and expert recommendations</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+                    <a href="#"><i class="fas fa-tag"></i> Affiliate Disclosure</a>
+                </div>
+                <p class="copyright">© 2024 Discover The Products With Me. All product links are affiliate links. We may earn a commission from qualifying purchases.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product data with SEO-optimized names and updated links
+        const products = [
+            {
+                id: 1,
+                name: "ASUS ROG Strix G16 (2025) Gaming Laptop - High Performance Gaming Computer with Advanced Cooling",
+                url: "https://amzn.to/4oN5AoM",
+                category: "gaming",
+                features: [
+                    "2025 Latest Model Gaming Laptop",
+                    "ASUS ROG Strix Series High Performance",
+                    "Advanced Cooling System for Extended Gaming",
+                    "Premium Build Quality and Design"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 2,
+                name: "SanDisk 2TB Extreme Portable SSD - Ultra Fast External Solid State Drive for Data Storage",
+                url: "https://amzn.to/4i95BRm",
+                category: "tech",
+                features: [
+                    "2TB High Capacity Portable SSD",
+                    "Extreme Speed Data Transfer",
+                    "Shock Resistant and Durable Design",
+                    "Compact and Portable Storage Solution"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 3,
+                name: "AMD Ryzen 7 9800X3D Processor - High Performance Gaming CPU with 3D V-Cache Technology",
+                url: "https://amzn.to/4rg61cL",
+                category: "gaming",
+                features: [
+                    "AMD Ryzen 7 9800X3D Gaming Processor",
+                    "3D V-Cache Technology for Enhanced Performance",
+                    "High Speed Processing for Gaming and Work",
+                    "Advanced Cooling and Efficiency"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 4,
+                name: "Roku Streaming Stick 4K - 4K HDR Streaming Device with Voice Remote and Premium Features",
+                url: "https://amzn.to/4rjWGAI",
+                category: "entertainment",
+                features: [
+                    "4K HDR Streaming Capability",
+                    "Voice Remote with Premium Features",
+                    "Easy Setup and User-Friendly Interface",
+                    "Access to Thousands of Streaming Channels"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 5,
+                name: "Smart Security Camera System - Wireless Home Surveillance Camera with Night Vision",
+                url: "https://amzn.to/4piqMTX",
+                category: "home",
+                features: [
+                    "Smart Home Security Camera System",
+                    "Wireless Installation and Setup",
+                    "Night Vision Capability for 24/7 Monitoring",
+                    "Mobile App Control and Alerts"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 6,
+                name: "CHAMBERLAIN Smart Garage Control - WiFi Garage Door Opener with Smartphone Access",
+                url: "#",
+                category: "home",
+                features: [
+                    "Smart Garage Door Control System",
+                    "WiFi Connectivity for Remote Access",
+                    "Smartphone App Control and Monitoring",
+                    "Secure and Reliable Operation"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 7,
+                name: "LEVOIT Smart Humidifier - Advanced Air Comfort System for Home with Humidity Control",
+                url: "https://amzn.to/3MmbLBy",
+                category: "home",
+                features: [
+                    "Smart Humidifier with Advanced Air Comfort",
+                    "Automatic Humidity Control System",
+                    "Quiet Operation for Bedroom Use",
+                    "Large Water Tank Capacity"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 8,
+                name: "Amazon Basics Disinfecting Wipes - Cleaning Supplies for Home and Office Use",
+                url: "https://amzn.to/4oBIWPd",
+                category: "home",
+                features: [
+                    "Disinfecting Cleaning Wipes for Surfaces",
+                    "Kills 99.9% of Germs and Bacteria",
+                    "Convenient Packaging for Easy Use",
+                    "Essential Cleaning Supplies for Home"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 9,
+                name: "Onlyone Water Dental Flosser - Oral Irrigator for Teeth Cleaning and Gum Care",
+                url: "https://amzn.to/3XAeDxi",
+                category: "home",
+                features: [
+                    "Water Dental Flosser for Oral Hygiene",
+                    "Multiple Pressure Settings for Comfort",
+                    "Effective Teeth Cleaning and Gum Care",
+                    "Portable and Easy to Use Design"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 10,
+                name: "Energizer Alkaline Power AAA Batteries - Long Lasting Batteries for Electronic Devices",
+                url: "https://amzn.to/3KyQSmb",
+                category: "tech",
+                features: [
+                    "Alkaline AAA Batteries for Long Life",
+                    "Powerful Performance for Electronic Devices",
+                    "Leak Protection Technology",
+                    "Reliable Power Source for Various Devices"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 11,
+                name: "How The Elf on the Shelf REALLY Works - 30 Second Magic Guide for Holiday Tradition",
+                url: "https://amzn.to/4pmNJVU",
+                category: "home",
+                features: [
+                    "Elf on the Shelf Magic Guide Book",
+                    "30 Second Setup for Holiday Tradition",
+                    "Family Fun Activity for Christmas",
+                    "Creative Ideas for Elf Placement"
+                ],
+                badge: "amazon"
+            },
+            {
+                id: 12,
+                name: "AULA F108 Pro Gaming Mechanical Keyboard - Tri Mode Wireless Keyboard with TFT Display",
+                url: "https://s.click.aliexpress.com/e/_c4r8DjkN",
+                category: "gaming",
+                features: [
+                    "Mechanical Gaming Keyboard with TFT Display",
+                    "Tri-Mode Wireless Connectivity",
+                    "Customizable RGB Lighting Effects",
+                    "High Performance for Gaming and Typing"
+                ],
+                badge: "aliexpress"
+            },
+            {
+                id: 13,
+                name: "QCY N70 ANC Earbuds - These Active Noise Cancelling Wireless Earbuds Should Be ILLEGAL",
+                url: "https://s.click.aliexpress.com/e/_c3XTHVCv",
+                category: "audio",
+                features: [
+                    "Active Noise Cancellation (ANC) Technology",
+                    "QCY N70 Premium Wireless Earbuds",
+                    "High Quality Sound with Deep Bass",
+                    "Long Battery Life and Fast Charging"
+                ],
+                badge: "aliexpress",
+                featured: true
+            },
+            {
+                id: 14,
+                name: "Budget Home Theater Projector - This $37 Projector CHANGED My Movie Nights Forever",
+                url: "https://s.click.aliexpress.com/e/_c4MNPMfT",
+                category: "entertainment",
+                features: [
+                    "Affordable $37 Home Theater Projector",
+                    "HD Movie Projector for Home Cinema",
+                    "Portable Design for Indoor/Outdoor Use",
+                    "Transforms Movie Nights Experience"
+                ],
+                badge: "aliexpress",
+                budget: true,
+                featured: true
+            },
+            {
+                id: 15,
+                name: "High Performance RAM Upgrade - This RAM Upgrade DOUBLED My FPS! 🤯 Gaming Memory",
+                url: "https://s.click.aliexpress.com/e/_c3VBTE5n",
+                category: "performance",
+                features: [
+                    "DOUBLES FPS Performance in Games",
+                    "High Speed Gaming RAM Upgrade",
+                    "Compatible with Most Gaming PCs",
+                    "Significant Performance Improvement"
+                ],
+                badge: "aliexpress",
+                performance: true,
+                featured: true
+            },
+            {
+                id: 16,
+                name: "Professional Streaming Microphone - This $76 Mic SHOCKS Pro Streamers! Studio Quality",
+                url: "https://s.click.aliexpress.com/e/_c3KiJze9",
+                category: "streaming",
+                features: [
+                    "Professional Studio Quality Microphone",
+                    "$76 Affordable Pro Streaming Mic",
+                    "Crystal Clear Audio for Streamers",
+                    "Shocks Professional Streamers with Quality"
+                ],
+                badge: "aliexpress",
+                pro: true,
+                featured: true
+            },
+            {
+                id: 17,
+                name: "Smart Wireless Mouse - This Mouse Solves Everything - And It's Only $8.56! Universal",
+                url: "https://s.click.aliexpress.com/e/_c4XbZ7Zj",
+                category: "smart",
+                features: [
+                    "Universal Smart Mouse That Solves Everything",
+                    "Only $8.56 Unbelievable Price",
+                    "Wireless Connectivity and Long Battery Life",
+                    "Compatible with All Computers and Laptops"
+                ],
+                badge: "aliexpress",
+                smart: true,
+                featured: true
+            },
+            {
+                id: 18,
+                name: "USB-C Hub Multi-Port Adapter - I Stopped Buying Dongles After Getting This $27 Hub",
+                url: "https://s.click.aliexpress.com/e/_c2Iw0d9T",
+                category: "essential",
+                features: [
+                    "Multi-Port USB-C Hub Replaces All Dongles",
+                    "Only $27 Essential Tech Solution",
+                    "Multiple Connectivity Options in One Device",
+                    "Eliminates Dongle Clutter Forever"
+                ],
+                badge: "aliexpress",
+                essential: true,
+                featured: true
+            }
+        ];
+
+        // DOM Elements
+        const productsGrid = document.getElementById('productsGrid');
+        const searchInput = document.getElementById('searchInput');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        // Current filter state
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        // Function to get category display name
+        function getCategoryDisplayName(category) {
+            const categoryMap = {
+                'gaming': 'Gaming',
+                'tech': 'Technology',
+                'audio': 'Audio',
+                'streaming': 'Streaming',
+                'entertainment': 'Entertainment',
+                'home': 'Home & Lifestyle',
+                'performance': 'Performance',
+                'smart': 'Smart Tech',
+                'essential': 'Essentials'
+            };
+            return categoryMap[category] || category;
+        }
+
+        // Function to render products
+        function renderProducts() {
+            productsGrid.innerHTML = '';
+            
+            // Filter products based on current filter and search
+            const filteredProducts = products.filter(product => {
+                // Apply category filter
+                if (currentFilter !== 'all' && product.category !== currentFilter) {
+                    return false;
+                }
+                
+                // Apply search filter
+                if (currentSearch && !product.name.toLowerCase().includes(currentSearch.toLowerCase())) {
+                    return false;
+                }
+                
+                return true;
+            });
+            
+            // Display message if no products found
+            if (filteredProducts.length === 0) {
+                productsGrid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search"></i>
+                        <h3>No Products Found</h3>
+                        <p>Try adjusting your search terms or filter to find what you're looking for.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Sort products: essential first, then smart, then pro, then performance, then featured, then budget, then by category
+            const sortedProducts = [...filteredProducts].sort((a, b) => {
+                if (a.essential && !b.essential) return -1;
+                if (!a.essential && b.essential) return 1;
+                if (a.smart && !b.smart) return -1;
+                if (!a.smart && b.smart) return 1;
+                if (a.pro && !b.pro) return -1;
+                if (!a.pro && b.pro) return 1;
+                if (a.performance && !b.performance) return -1;
+                if (!a.performance && b.performance) return 1;
+                if (a.featured && !b.featured) return -1;
+                if (!a.featured && b.featured) return 1;
+                if (a.budget && !b.budget) return -1;
+                if (!a.budget && b.budget) return 1;
+                return a.id - b.id;
+            });
+            
+            // Render each product
+            sortedProducts.forEach(product => {
+                const productElement = document.createElement('div');
+                
+                // Determine card class based on product properties
+                let cardClass = 'product-card';
+                if (product.essential) {
+                    cardClass += ' essential-product';
+                } else if (product.smart) {
+                    cardClass += ' smart-product';
+                } else if (product.pro) {
+                    cardClass += ' pro-product';
+                } else if (product.performance) {
+                    cardClass += ' performance-product';
+                } else if (product.featured && product.budget) {
+                    cardClass += ' featured-product budget-product';
+                } else if (product.featured) {
+                    cardClass += ' featured-product';
+                } else if (product.budget) {
+                    cardClass += ' budget-product';
+                }
+                
+                productElement.className = cardClass;
+                productElement.style.animationDelay = `${product.id * 0.05}s`;
+                
+                // Determine badge HTML
+                let badgeHTML = '';
+                if (product.badge === 'amazon') {
+                    badgeHTML = '<span class="amazon-badge">Amazon</span>';
+                } else if (product.badge === 'aliexpress') {
+                    badgeHTML = '<span class="aliexpress-badge">AliExpress</span>';
+                }
+                
+                // Add special badges
+                if (product.essential) {
+                    badgeHTML += '<span class="essential-badge">ESSENTIAL TECH</span>';
+                }
+                if (product.smart) {
+                    badgeHTML += '<span class="smart-badge">SMART DEAL</span>';
+                }
+                if (product.pro) {
+                    badgeHTML += '<span class="pro-badge">PRO GRADE</span>';
+                }
+                if (product.performance) {
+                    badgeHTML += '<span class="performance-badge">PERFORMANCE BOOST</span>';
+                }
+                if (product.featured) {
+                    badgeHTML += '<span class="hot-badge">FEATURED</span>';
+                }
+                if (product.budget) {
+                    badgeHTML += '<span class="budget-badge">BUDGET FRIENDLY</span>';
+                }
+                
+                productElement.innerHTML = `
+                    <div class="product-category">${getCategoryDisplayName(product.category)}</div>
+                    <h3 class="product-name">${product.name} ${badgeHTML}</h3>
+                    <ul class="product-features">
+                        ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                    <a href="${product.url}" target="_blank" rel="noopener noreferrer" class="product-link">
+                        ${product.url === '#' ? 'Coming Soon' : 'View Product'} 
+                        <i class="fas fa-${product.url === '#' ? 'clock' : 'external-link-alt'}"></i>
+                    </a>
+                `;
+                
+                productsGrid.appendChild(productElement);
+            });
+        }
+
+        // Function to handle filter button clicks
+        function handleFilterClick(e) {
+            const filter = e.target.dataset.filter;
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+            
+            // Update current filter and re-render
+            currentFilter = filter;
+            renderProducts();
+            
+            // Scroll to products section
+            document.querySelector('.products-grid').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Function to handle search input
+        function handleSearchInput() {
+            currentSearch = searchInput.value.trim();
+            renderProducts();
+        }
+
+        // Function to initialize product counter
+        function updateProductCounter() {
+            const counter = document.querySelector('.stat:nth-child(1)');
+            if (counter) {
+                counter.innerHTML = `<i class="fas fa-laptop"></i> ${products.length}+ Premium Products`;
+            }
+        }
+
+        // Initialize the application
+        function init() {
+            // Add event listeners
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', handleFilterClick);
+            });
+            
+            searchInput.addEventListener('input', handleSearchInput);
+            
+            // Add essentials filter button dynamically if not exists
+            const filterContainer = document.querySelector('.filter-buttons');
+            const essentialFilterExists = Array.from(filterButtons).some(btn => btn.dataset.filter === 'essential');
+            
+            if (!essentialFilterExists) {
+                const essentialBtn = document.createElement('button');
+                essentialBtn.className = 'filter-btn';
+                essentialBtn.dataset.filter = 'essential';
+                essentialBtn.textContent = 'Essentials';
+                essentialBtn.addEventListener('click', handleFilterClick);
+                filterContainer.appendChild(essentialBtn);
+            }
+            
+            // Initial render
+            renderProducts();
+            updateProductCounter();
+            
+            // Set page title with product count for SEO
+            document.title = `Discover The Products With Me - ${products.length} Premium Products Including $27 USB-C Hub & Essential Tech`;
+            
+            // Update meta description with product count
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                const essentialProducts = products.filter(p => p.category === 'essential' || p.category === 'tech').length;
+                const smartProducts = products.filter(p => p.category === 'smart').length;
+                const streamingProducts = products.filter(p => p.category === 'streaming' || p.category === 'audio').length;
+                const performanceProducts = products.filter(p => p.category === 'performance').length;
+                const entertainmentProducts = products.filter(p => p.category === 'entertainment').length;
+                const gamingProducts = products.filter(p => p.category === 'gaming').length;
+                const homeProducts = products.filter(p => p.category === 'home').length;
+                
+                metaDescription.content = `Discover ${products.length} premium tech products including ${essentialProducts} essential devices like $27 USB-C hubs, ${smartProducts} smart devices, ${streamingProducts} streaming devices, ${performanceProducts} performance upgrades, ${entertainmentProducts} entertainment devices, ${gamingProducts} gaming products, and ${homeProducts} home items with expert reviews.`;
+            }
+            
+            // Add structured data for SEO
+            const structuredData = {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Discover The Products With Me",
+                "description": "Expert product discovery and recommendations for tech, gaming, essential devices, smart tech, streaming gear, performance upgrades and home products",
+                "url": window.location.href,
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": `${window.location.href}?q={search_term_string}`,
+                    "query-input": "required name=search_term_string"
+                }
+            };
+            
+            const script = document.createElement('script');
+            script.type = "application/ld+json";
+            script.textContent = JSON.stringify(structuredData);
+            document.head.appendChild(script);
+            
+            // Update stats bar with essentials info
+            const statsBar = document.querySelector('.stats-bar');
+            const essentialStat = document.querySelector('.stat:nth-child(3)');
+            if (essentialStat) {
+                essentialStat.innerHTML = `<i class="fas fa-plug"></i> ${products.filter(p => p.category === 'essential' || p.category === 'tech').length} Essential Tech`;
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
